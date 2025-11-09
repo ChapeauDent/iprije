@@ -29,7 +29,7 @@ class ContactController extends Controller
             $emailData['contenu_message'] = $validated['message'];
             
             Mail::send('emails.contact', $emailData, function ($mail) use ($validated) {
-                $mail->to('contact@iprije.com')
+                $mail->to('contact@iprije.fr')
                      ->subject('Nouveau message de contact - ' . $validated['nom'] . ' ' . $validated['prenom'])
                      ->replyTo($validated['email'], $validated['nom'] . ' ' . $validated['prenom']);
             });
