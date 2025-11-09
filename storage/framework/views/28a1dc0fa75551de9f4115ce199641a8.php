@@ -6,6 +6,16 @@
     <title><?php echo $__env->yieldContent('title', 'IPRIJE - Intelligence Artificielle & Programmation par le Jeu'); ?></title>
     <meta name="description" content="<?php echo $__env->yieldContent('meta_description', 'IPRIJE : Intelligence Artificielle, Programmation, Robotique, Initié par le Jeu. Solutions numériques innovantes pour Entreprises et Écoles.'); ?>">
     
+    <!-- Favicon -->
+    <link rel="icon" href="<?php echo e(asset('favicon.svg')); ?>" type="image/svg+xml">
+    <link rel="icon" href="<?php echo e(asset('favicon-32x32.svg')); ?>" type="image/svg+xml" sizes="32x32">
+    <link rel="icon" href="<?php echo e(asset('favicon-16x16.svg')); ?>" type="image/svg+xml" sizes="16x16">
+    <link rel="apple-touch-icon" href="<?php echo e(asset('apple-touch-icon.svg')); ?>">
+    <link rel="manifest" href="<?php echo e(asset('site.webmanifest')); ?>">
+    <meta name="theme-color" content="#2B4F75">
+    <meta name="msapplication-TileColor" content="#2B4F75">
+    <meta name="msapplication-config" content="<?php echo e(asset('browserconfig.xml')); ?>">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,7 +92,7 @@
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li><a href="mailto:contact@iprije.fr">contact@iprije.fr</a></li>
+                        <li><a href="mailto:contact@iprije.com">contact@iprije.com</a></li>
                         <li><a href="tel:+330650649241">+33 (0)6 50 64 92 41</a></li>
                         <li>Vernon, Normandie</li>
                         <li>Île-de-France & National</li>
@@ -92,8 +102,8 @@
             <div class="footer-bottom">
                 <p>&copy; <?php echo e(date('Y')); ?> IPRIJE - Tous droits réservés</p>
                 <div class="footer-links">
-                    <a href="#mentions">Mentions légales</a>
-                    <a href="#confidentialite">Politique de confidentialité</a>
+                    <a href="<?php echo e(route('legal.mentions')); ?>">Mentions légales</a>
+                    <a href="<?php echo e(route('legal.privacy')); ?>">Politique de confidentialité</a>
                 </div>
             </div>
         </div>

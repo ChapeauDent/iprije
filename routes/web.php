@@ -33,6 +33,15 @@ Route::get('/test-article', function () {
     return view('test-article');
 })->name('test.article');
 
+// Pages légales
+Route::get('/mentions-legales', function () {
+    return view('legal.mentions');
+})->name('legal.mentions');
+
+Route::get('/politique-confidentialite', function () {
+    return view('legal.privacy');
+})->name('legal.privacy');
+
 // Dashboard
 Route::get('/dashboard', function () {
     return view('dashboard');

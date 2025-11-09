@@ -460,6 +460,7 @@
                     <a href="<?php echo e(route('blog.show', $post->slug)); ?>">
                         <img src="<?php echo e($post->featured_image); ?>" alt="<?php echo e($post->title); ?>">
                     </a>
+                    <div class="blog-card-overlay"></div>
                 </div>
                 <?php endif; ?>
                 <div class="blog-card-content">

@@ -460,6 +460,7 @@
                     <a href="{{ route('blog.show', $post->slug) }}">
                         <img src="{{ $post->featured_image }}" alt="{{ $post->title }}">
                     </a>
+                    <div class="blog-card-overlay"></div>
                 </div>
                 @endif
                 <div class="blog-card-content">

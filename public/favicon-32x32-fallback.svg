@@ -1,0 +1,6 @@
+<!-- Version PNG fallback pour anciens navigateurs -->
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="4" fill="#2B4F75"/>
+<rect x="2" y="2" width="28" height="28" rx="2" fill="#387B79"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 10V22H10V10H14.5ZM8.5 8V24L12 27H19V13L16 8H8.5Z" fill="#2B4F75"/>
+</svg>

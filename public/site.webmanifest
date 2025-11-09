@@ -1,0 +1,33 @@
+{
+    "name": "IPRIJE",
+    "short_name": "IPRIJE",
+    "description": "IPRIJE : Intelligence Artificielle, Programmation, Robotique, Initié par le Jeu. Solutions innovantes pour Entreprises et Écoles.",
+    "icons": [
+        {
+            "src": "favicon-16x16.svg",
+            "sizes": "16x16",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "favicon-32x32.svg", 
+            "sizes": "32x32",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "apple-touch-icon.svg",
+            "sizes": "180x180",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#2B4F75",
+    "background_color": "#FFFFFF",
+    "orientation": "portrait-primary"
+}
