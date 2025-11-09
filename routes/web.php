@@ -42,6 +42,13 @@ Route::get('/politique-confidentialite', function () {
     return view('legal.privacy');
 })->name('legal.privacy');
 
+// Sitemap
+Route::get('/sitemap.xml', function () {
+    return response()->view('sitemap', [
+        'posts' => \App\Models\Post::where('is_published', true)->orderBy('published_at', 'desc')->get()
+    ])->header('Content-Type', 'text/xml');
+})->name('sitemap');
+
 // Dashboard
 Route::get('/dashboard', function () {
     return view('dashboard');
