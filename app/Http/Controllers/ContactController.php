@@ -24,10 +24,10 @@ class ContactController extends Controller
 
         // Envoyer l'email
         try {
-            Mail::send('emails.contact', $validated, function ($message) use ($validated) {
-                $message->to('contact@iprije.com')
-                        ->subject('Nouveau message de contact - ' . $validated['nom'] . ' ' . $validated['prenom'])
-                        ->replyTo($validated['email'], $validated['nom'] . ' ' . $validated['prenom']);
+            Mail::send('emails.contact', $validated, function ($mail) use ($validated) {
+                $mail->to('contact@iprije.com')
+                     ->subject('Nouveau message de contact - ' . $validated['nom'] . ' ' . $validated['prenom'])
+                     ->replyTo($validated['email'], $validated['nom'] . ' ' . $validated['prenom']);
             });
 
             // Message adapté selon l'environnement
