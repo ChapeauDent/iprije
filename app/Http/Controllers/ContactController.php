@@ -24,7 +24,11 @@ class ContactController extends Controller
 
         // Envoyer l'email
         try {
-            Mail::send('emails.contact', $validated, function ($mail) use ($validated) {
+            // Renommer 'message' en 'contenu_message' pour éviter conflit avec variable Laravel
+            $emailData = $validated;
+            $emailData['contenu_message'] = $validated['message'];
+            
+            Mail::send('emails.contact', $emailData, function ($mail) use ($validated) {
                 $mail->to('contact@iprije.com')
                      ->subject('Nouveau message de contact - ' . $validated['nom'] . ' ' . $validated['prenom'])
                      ->replyTo($validated['email'], $validated['nom'] . ' ' . $validated['prenom']);

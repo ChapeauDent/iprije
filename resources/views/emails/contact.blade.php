@@ -21,7 +21,7 @@
         
         <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
             <h3 style="color: #2B4F75; margin-top: 0;">Message :</h3>
-            <p style="white-space: pre-line;">{{ $message }}</p>
+            <p style="white-space: pre-line;">{{ $contenu_message }}</p>
         </div>
         
         <div style="margin-top: 30px; padding: 15px; background: #e7f3ff; border-left: 4px solid #2B4F75;">
